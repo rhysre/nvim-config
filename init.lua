@@ -139,6 +139,7 @@ ftplugin('asciidoc', {
 
 ftplugin('go', {
   tabstop = 4,
+  expandtab = false
 })
 
 -- auto format for gopls
