@@ -91,6 +91,7 @@ lspconfig.yamlls.setup {
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<Leader>ff', builtin.find_files, { desc = "find files" })
 vim.keymap.set('n', '<Leader>lg', builtin.live_grep, { desc = "live grep" })
+vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
 
 -- signature helper
 require "lsp_signature".setup()
