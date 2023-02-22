@@ -97,7 +97,7 @@ vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
 require "lsp_signature".setup()
 
 -- lsp ui stuff: TODO look into this later for more cool things to add
-require 'lspsaga'.init_lsp_saga()
+require('lspsaga').setup({})
 
 -- basic vim options
 vim.cmd('colorscheme gruvbox')
